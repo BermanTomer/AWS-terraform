@@ -21,8 +21,3 @@ resource "aws_instance" "app_server" {
     Name = "AppServerInstanceCLOUD"
   }
 }
-
-resource "aws_ec2_instance_state" "test" {
-  instance_id = aws_instance.app_server.id
-  state       = "start"
-}
