@@ -15,7 +15,7 @@ provider "aws" {
 
 resource "aws_instance" "app_server" {
   ami           = "ami-0e1c5be2aa956338b"
-  instance_type = "t2.micro"
+  instance_type = var.ec2_instance_type
 
   tags = {
     Name = "AppServerInstanceCLOUD1"
