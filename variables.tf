@@ -8,10 +8,6 @@ variable "ec2_instance_name"{
 	default = "AppServerInstanceCLI"
 }
 
-variable "ec2_instance_name"{
-	type = string
-	default = "AppServerInstanceCLI"
-}
 
 variable "ec2_status"{
 	type = string
