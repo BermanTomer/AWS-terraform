@@ -18,7 +18,7 @@ resource "aws_instance" "app_server" {
   instance_type = var.ec2_instance_type
 
   tags = {
-    Name = "AppServerInstanceCLOUD1"
+    Name = var.ec2_instance_name
   }
 }
 
